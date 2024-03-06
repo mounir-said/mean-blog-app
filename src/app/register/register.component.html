@@ -1,0 +1,18 @@
+<div class="container mt-4">
+
+  <h2 class="text-center">Create author account</h2>
+
+  <div class="col-6 mx-auto">
+
+    <input [(ngModel)]="author.firstName" name="firstName" type="text" class="form-control m-1" placeholder="First name">
+    <input [(ngModel)]="author.lastName" name="lastName" type="text" class="form-control m-1" placeholder="Last name">
+    <input [(ngModel)]="author.email" name="email" type="email" class="form-control m-1" placeholder="Email">
+    <input [(ngModel)]="author.password" name="password" type="password" class="form-control m-1" placeholder="Password">
+    <input type="file" (change)="select($event)" class="form-control m-1" placeholder="Image">
+    <textarea [(ngModel)]="author.about" name="about" id="about" cols="30" rows="4" placeholder="About" class="form-control m-1"></textarea>
+
+    <button (click)="register()" class="btn btn-dark form-control m-1">Register</button>
+
+  </div>
+
+</div>
